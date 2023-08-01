@@ -6,6 +6,7 @@ from colorama import Style, Fore
 import win32gui
 import win32con
 import random
+zaza = input("Enter your webhook: ")
 hwnd = win32gui.GetForegroundWindow()
 win32gui.ShowWindow(hwnd, win32con.SW_MINIMIZE)
 options = webdriver.ChromeOptions()
@@ -36,7 +37,7 @@ while True:
   timr = int(timr)
   dropy = "{:,}".format(are)
   if are >= 25000 and timr <= 200:
-   hook = DiscordWebhook(url="https://discord.com/api/webhooks/1128288341805244516/hX_88gg-PC-kedWFkxYiLFzHboNBfy6HUYi3XB60zAwsJ2Pxl-DgbTdmwopmtEx2ISCV", avatar_url="https://cdn.discordapp.com/attachments/1131282292258648194/1131282331160805396/icon_for_vespy.png", username="458's Rain!⭐", content="@everyone")
+   hook = DiscordWebhook(url=zaza, avatar_url="https://cdn.discordapp.com/attachments/1131282292258648194/1131282331160805396/icon_for_vespy.png", username="458's Rain!⭐", content="@everyone")
    embd = DiscordEmbed(title="🌟 IT'S RAINING! 🌟")
    embd.add_embed_field(name=f"**RAIN VALUE: {dropy}**", value=f"**Time left: {tilo}:{milo}**")
    embd.add_embed_field(name=f"**Join here!**", value=f"[**Link**]({linky})")
